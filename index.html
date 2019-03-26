@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Autômato finito</title>
+</head>
+<body>
+    <header>
+        <h1 id="automatTitle">Autômato Finito</h1>
+    </header>
+
+    <section id="form">
+    <p class="titleInputs">Transições</p>
+    <input size="20" type="text" id="states" placeholder="Ex: 0,a,1">
+
+    <button type="button" id="button">Adicionar</button>
+    
+    <p class="titleInputs">Estado Inicial</p>
+    <input size="20" type="text" id="initial" placeholder="Ex: 0 ">
+    
+    <p class="titleInputs">Estado final</p>
+    <input size="20" type="text" id="final" placeholder="Ex: 3">  
+    
+    <p class="titleInputs">Palavra</p>
+    <input size="20" type="text" id="words" placeholder="Ex: aab">
+   
+    <button type="button" id="buttonWords">Testar palavra</button>
+
+    </section>
+    <div id="formResult">
+    <h3 id="resultTitle">RESULTADO</h3>
+    </div>
+    <script src="scripts/controller/automatController.js"></script>
+    <script src="scripts/main.js"></script>
+
+</body>
+</html>
